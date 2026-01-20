@@ -1,0 +1,71 @@
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+# macOS Finder 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 아이콘 파일
+Icon?
+# 썸네일
+._*
+
+# === 빌드/의존성 관련 ===
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Maven (혹시 병행할 경우)
+target/
+
+# 로그/임시 파일
+*.log
+*.tmp
+
+# === 데이터베이스 관련 ===
+# H2 DB 파일
+*.h2.db
+*.mv.db
+
+# === 기타 ===
+# 패키징 산출물
+*.jar
+*.war
+*.ear
