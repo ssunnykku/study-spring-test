@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 public class StudyLogService {
     private final StudyLogRepository studyLogRepository;
 
-    public StudyLog createReplication(long id, String reflection, boolean hasStudy) {
+    public StudyLog createReplication(String reflection, boolean hasStudy) {
         LocalDate date = LocalDate.now();
 
         SearchParam dateTime = dateForSelect(date);
@@ -25,7 +25,7 @@ public class StudyLogService {
             throw new StudyLogException("회고는 하루에 하나씩만 입력이 가능합니다.");
         });
 
-        StudyLog studyLog = studyLogRepository.save(new StudyLog(id, reflection, hasStudy));
+        StudyLog studyLog = studyLogRepository.save(StudyLog.of(reflection, hasStudy));
 
         return studyLog;
     }
