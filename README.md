@@ -8,6 +8,34 @@
 - 스프링 환경에서 테스트 코드 작성에 익숙해지기
 - Dummy / Stub / Fake / Mock / Spy 개념을 직접 써보며 체득
 
+---
+
+### 구조
+
+```
+study-test (root)
+├── core/
+│   ├── src/main/java/com/ssunnykku/study_test/
+│   │   └── di/
+│   └── src/test/java/com/ssunnykku/study_test/
+├── sorting/
+│   ├── src/main/java/com/ssunnykku/study_test/sorting/
+│   └── src/test/java/com/ssunnykku/study_test/sorting/
+└── studylog/
+    ├── src/main/java/com/ssunnykku/study_test/studylog/
+    └── src/test/java/com/ssunnykku/study_test/studylog/
+```
+
+### 모듈 설명
+
+| 모듈     | 역할                          |
+| -------- | ----------------------------- |
+| core     | 학습 주제별 공통 코드 (di...) |
+| sorting  | 정렬 알고리즘 모듈            |
+| studylog | 학습 회고 기록 미니 프로젝트  |
+
+---
+
 ### 1. di
 
 - 테스트 컨테이너 사용 vs 컨테이너 없이 테스트 비교

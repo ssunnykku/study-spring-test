@@ -53,7 +53,7 @@ public class StudyLogServiceTest {
         // then
         assertThat(result).isNotNull();
         assertThat(result.getReflection()).isEqualTo("회고");
-        assertThat(result.isHasStudied()).isTrue();
+        assertThat(result.getHasStudied()).isTrue();
     }
 
 }
